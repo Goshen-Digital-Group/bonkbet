@@ -38,7 +38,7 @@ const StyledHeader = styled.div`
   justify-content: space-between;
   width: 100%;
   padding: 10px;
-  background: #000000cc;
+  background: #00000017;
   backdrop-filter: blur(20px);
   position: fixed;
   top: 0;

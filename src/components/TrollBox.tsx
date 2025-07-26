@@ -39,7 +39,7 @@ const Wrapper = styled.div<{ $isMinimized: boolean }>`
   right: 20px;
   z-index: 998;
   border-radius: ${({ $isMinimized }) => ($isMinimized ? '50%' : '12px')};
-  background: ${({ $isMinimized }) => ($isMinimized ? '#5e47ff' : 'rgba(28,28,35,0.85)')};
+  background: ${({ $isMinimized }) => ($isMinimized ? '#ffa947ff' : 'rgba(28,28,35,0.85)')};
   border: 1px solid
     ${({ $isMinimized }) => ($isMinimized ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.1)')};
   color: #eee;
@@ -200,7 +200,7 @@ const TextInput = styled.input`
 `
 
 const SendBtn = styled.button`
-  background: #5e47ff;
+  background: #ffa047ff;
   border: none;
   padding: 0 12px;
   cursor: pointer;
@@ -209,11 +209,11 @@ const SendBtn = styled.button`
   font-size: 0.9rem;
 
   &:hover:not(:disabled) {
-    background: #6f5aff;
+    background: #ffb25aff;
   }
 
   &:active:not(:disabled) {
-    background: #4d38cc;
+    background: #cc9138ff;
     transform: scale(0.98);
   }
 

@@ -13,7 +13,7 @@ export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
 export const EXPLORER_URL = 'https://explorer.gamba.so'
 
 // Platform URL - Appears in ShareModal
-export const PLATFORM_SHARABLE_URL = 'play.gamba.so'
+export const PLATFORM_SHARABLE_URL = 'play.casinoofbonk.fun'
 
 // Creator fee (in %)
 export const PLATFORM_CREATOR_FEE = 0.01 // 1% !!max 5%!!
@@ -61,8 +61,8 @@ export const DEFAULT_POOL = POOLS[0]
 export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
   {
     mint: FAKE_TOKEN_MINT,
-    name: 'Fake',
-    symbol: 'FAKE',
+    name: 'TCOB',
+    symbol: 'TCOB',
     image: '/fakemoney.png',
     baseWager: 1e9,
     decimals: 9,

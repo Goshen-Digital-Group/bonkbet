@@ -17,7 +17,7 @@ export const ModalContent = styled.div`
   overflow-y: auto;
 
   &::-webkit-scrollbar          { width: 6px; }
-  &::-webkit-scrollbar-thumb    { background: rgba(255,255,255,0.2); border-radius: 3px; }
+  &::-webkit-scrollbar-thumb    { background: rgba(255, 153, 0, 0.2); border-radius: 3px; }
   &::-webkit-scrollbar-track    { background: transparent; }
 
   @media (max-width: 480px) {
@@ -38,17 +38,17 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.p`
   font-size: .9rem;
-  color: #a0a0a0;
+  color: #b67c00ff;
   margin: 0;
 `
 
 /* ───── Tabs (same palette as staking) ───── */
 export const TabRow = styled.div`
   display:flex; gap:4px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 187, 0, 0.13);
   border-radius:10px;
   padding:4px;
-  border:1px solid rgba(255,255,255,0.08);
+  border:1px solid rgba(255, 174, 0, 0.08);
   margin:.5rem 0 1rem;
 `
 

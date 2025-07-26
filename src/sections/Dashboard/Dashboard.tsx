@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import { SlideSection } from '../../components/Slider'
 import { GAMES } from '../../games'
 import { GameCard } from './GameCard'
-import { WelcomeBanner } from './WelcomeBanner'
+import { Menu } from './menu'
+import { ImageCarousel } from './ImageCarousel'
 
 export function GameSlider() {
   return (
@@ -45,7 +46,8 @@ export function GameGrid() {
 export default function Dashboard() {
   return (
     <>
-      <WelcomeBanner />
+      <ImageCarousel />
+      <Menu />
       <h2 style={{ textAlign: 'center' }}>Games</h2>
       <GameGrid />
     </>

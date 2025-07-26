@@ -25,7 +25,7 @@ export const TosWrapper = styled.div`
   position: relative;
   &:after {
     content: " ";
-    background: linear-gradient(180deg, transparent, #15151f);
+    background: linear-gradient(180deg, transparent, #f88d00ff);
     height: 50px;
     pointer-events: none;
     width: 100%;
