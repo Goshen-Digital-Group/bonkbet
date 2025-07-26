@@ -14,6 +14,7 @@ import RecentPlays from './sections/RecentPlays/RecentPlays'
 import Toasts from './sections/Toasts'
 import { MainWrapper, TosInner, TosWrapper } from './styles'
 import TrollBox from './components/TrollBox'
+import Footer from './components/Footer'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -81,6 +82,7 @@ export default function App() {
         <RecentPlays />
       </MainWrapper>
       {ENABLE_TROLLBOX && <TrollBox />}
+      <Footer />
     </>
   )
 }
