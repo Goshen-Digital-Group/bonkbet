@@ -49,7 +49,7 @@ const Buttons = styled.div`
   }
 `;
 
-export function Menu() {
+export function Navigation() {
   const wallet = useWallet();
   const walletModal = useWalletModal();
   const store = useUserStore();
