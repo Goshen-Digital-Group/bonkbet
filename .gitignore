@@ -4,3 +4,4 @@ node_modules
 dist
 dev-dist
 .env
+package-lock.json

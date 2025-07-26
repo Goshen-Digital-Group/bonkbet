@@ -29,7 +29,7 @@ const Wrapper = styled.div`
   z-index: 100;
   max-width: min(100%, 460px);
   border-radius: 10px;
-  background: #15151f;
+  background: rgba(54, 29, 0, 1);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
   flex: 1;
   padding-bottom: 20px;
@@ -49,7 +49,7 @@ const StyledModal = styled.div`
   right: 0;
   bottom: 0;
   transition: opacity linear 150ms;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(54, 29, 0, 0.69);
   z-index: 100;
   overflow-y: auto;
   height: 100vh;

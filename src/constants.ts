@@ -13,7 +13,7 @@ export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
 export const EXPLORER_URL = 'https://explorer.gamba.so'
 
 // Platform URL - Appears in ShareModal
-export const PLATFORM_SHARABLE_URL = 'play.gamba.so'
+export const PLATFORM_SHARABLE_URL = 'play.casinoofbonk.fun'
 
 // Creator fee (in %)
 export const PLATFORM_CREATOR_FEE = 0.01 // 1% !!max 5%!!
@@ -61,8 +61,8 @@ export const DEFAULT_POOL = POOLS[0]
 export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
   {
     mint: FAKE_TOKEN_MINT,
-    name: 'Fake',
-    symbol: 'FAKE',
+    name: 'TCOB',
+    symbol: 'TCOB',
     image: '/fakemoney.png',
     baseWager: 1e9,
     decimals: 9,
@@ -86,7 +86,7 @@ export const TOS_HTML = `
   <p><b>3. Risk Acknowledgement:</b> Games involve risk; no guaranteed winnings.</p>
   <p><b>4. No Warranty:</b> Games provided "as is"; operate randomly.</p>
   <p><b>5. Limitation of Liability:</b> We're not liable for damages.</p>
-  <p><b>6. Licensing Disclaimer:</b> Not a licensed casino; for simulation only.</p>
+  <p><b>6. Licensing Disclaimer:</b> Not a licensed casino.</p>
   <p><b>7. Fair Play:</b> Games are conducted fairly and transparently.</p>
   <p><b>8. Data Privacy:</b> Your privacy is important to us.</p>
   <p><b>9. Responsible Gaming:</b> Play responsibly; seek help if needed.</p>

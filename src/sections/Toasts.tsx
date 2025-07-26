@@ -93,7 +93,7 @@ const StyledTimer = styled.div<{$ticking: boolean}>`
     top: 0;
     width: 100%;
     height: 5px;
-    background: #9564ff;
+    background: #ffa600;
   }
 `
 
