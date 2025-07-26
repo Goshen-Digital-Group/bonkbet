@@ -45,6 +45,8 @@ export const POOLS = [
   lp('So11111111111111111111111111111111111111112'),
   // USDC:
   lp('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
+  // BONK:
+  lp('DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263'),
 ]
 
 // The default token to be selected
@@ -69,6 +71,15 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     name: 'W',
     symbol: 'Wormhole',
     image: 'https://wormhole.com/token.png',
+    baseWager: 1e6,
+    decimals: 6,
+    usdPrice: 0,
+  },
+  {
+    mint: new PublicKey('DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263'),
+    name: 'BONK',
+    symbol: 'BONK',
+    image: 'https://quei6zhlcfsxdfyes577gy7bkxmuz7qqakyt72xlbkyh7fysmoza.arweave.net/hQiPZOsRZXGXBJd_82PhVdlM_hACsT_q6wqwf5cSY7I',
     baseWager: 1e6,
     decimals: 6,
     usdPrice: 0,
