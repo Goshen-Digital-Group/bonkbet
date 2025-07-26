@@ -21,7 +21,7 @@ export const EXPLORER_URL = "https://explorer.gamba.so";
 export const PLATFORM_SHARABLE_URL = "play.casinoofbonk.fun";
 
 // Creator fee (in %)
-export const PLATFORM_CREATOR_FEE = 0.01; // 1% !!max 5%!!
+export const PLATFORM_CREATOR_FEE = 0.0125; // 1.25% !!max 5%!!
 
 // Jackpot fee (in %)
 export const PLATFORM_JACKPOT_FEE = 0.001; // 0.1%
