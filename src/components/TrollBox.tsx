@@ -102,7 +102,7 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 174, 0, 0.05);
   color: #fff;
   cursor: pointer;
 `
@@ -180,7 +180,7 @@ const Timestamp = styled.span`
 const InputRow = styled.div`
   display: flex;
   border-top: 1px solid rgba(255,255,255,0.08);
-  background: rgba(0,0,0,0.1);
+  background: rgba(243, 158, 0, 0.1);
   flex-shrink: 0;
 `
 
@@ -328,7 +328,7 @@ export default function TrollBox() {
       )}
       <ContentContainer $isMinimized={isMinimized}>
         <Header onClick={toggleMinimize}>
-          <HeaderTitle>Troll Box</HeaderTitle>
+          <HeaderTitle>Community Chat</HeaderTitle>
           <HeaderStatus>
             {messages.length ? `${messages.length} msgs` : 'Connecting…'}
           </HeaderStatus>
