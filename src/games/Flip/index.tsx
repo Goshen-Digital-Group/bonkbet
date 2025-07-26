@@ -13,7 +13,7 @@ const SIDES = {
   heads: [2, 0],
   tails: [0, 2],
 }
-const WAGER_OPTIONS = [1, 5, 10, 50, 100]
+const WAGER_OPTIONS = [1, 5, 10, 50, 100, 1000, 5000, 10000, 50000, 100000]
 
 type Side = keyof typeof SIDES
 
