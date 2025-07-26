@@ -1,7 +1,7 @@
 {
-  "name": "gamba-platform-template",
+  "name": "casino-of-bonk",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "scripts": {
     "dev": "vite",
@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@coral-xyz/anchor": "^0.27.0",
-    "@preact/signals-react": "^2.0.0",
     "@ledgerhq/errors": "6.16.3",
+    "@preact/signals-react": "^2.0.0",
     "@react-three/drei": "^9.89.0",
     "@react-three/fiber": "^8.15.11",
     "@solana/spl-token": "^0.3.8",
@@ -21,9 +21,11 @@
     "@solana/web3.js": "^1.78.5",
     "@vercel/kv": "^3.0.0",
     "buffer": "^6.0.3",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "gamba-core-v2": "0.4.0",
     "gamba-react-ui-v2": "0.7.0",
     "gamba-react-v2": "1.2.0",
-    "gamba-core-v2": "0.4.0",
     "html2canvas": "^1.4.1",
     "matter-js": "^0.19.0",
     "react": "^18.2.0",
@@ -35,11 +37,14 @@
     "zustand": "^4.4.1"
   },
   "devDependencies": {
+    "@types/matter-js": "^0.19.5",
     "@types/react": "^18.2.22",
     "@types/react-dom": "^18.0.11",
-    "@types/matter-js": "^0.19.5",
     "@types/three": "^0.161.2",
     "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
     "unplugin-fonts": "^1.0.3",
     "vite": "^4.2.1",
     "vite-plugin-pwa": "^0.17.4"

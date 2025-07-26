@@ -3,28 +3,29 @@
 }
 
 :root {
-  --background-color: #0b0b0e;
+  --background-color: #ffa600;
   --text-color: #ffffff;
-  --gamba-ui-primary-color: #9564ff;
+  -webkit-text-stroke-width: 0.25px;
+  --gamba-ui-primary-color: #ff9900;
 
-  --gamba-ui-border-radius: 10px;
+  --gamba-ui-border-radius: 5px;
 
-  --gamba-ui-button-default-background: #0e0e16;
-  --gamba-ui-button-default-background-hover: #11111d;
-  --gamba-ui-button-default-color: white;
+  --gamba-ui-button-default-background: #ff9900;
+  --gamba-ui-button-default-background-hover: #fdc97a;
+  --gamba-ui-button-default-color: rgb(0, 0, 0);
 
-  --gamba-ui-button-main-background: #8851ff;
-  --gamba-ui-button-main-color: white;
-  --gamba-ui-button-main-background-hover: #9564ff;
+  --gamba-ui-button-main-background: #ff9900;
+  --gamba-ui-button-main-color: rgb(0, 0, 0);
+  --gamba-ui-button-main-background-hover: #fdc97a;
 
-  --gamba-ui-input-background: #0e0e16;
-  --gamba-ui-input-color: #ffffff;
-  --gamba-ui-input-background-hover: #11111d;
+  --gamba-ui-input-background: #ff9900;
+  --gamba-ui-input-color: #000000;
+  --gamba-ui-input-background-hover: #fdc97a;
 }
 
 body, input, button, textarea, pre {
   font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1, h2 {
@@ -57,7 +58,7 @@ body::-webkit-scrollbar-thumb {
 .wallet-adapter-button.wallet-adapter-button-trigger {
   height: 40px;
   line-height: 40px;
-  font-weight: normal;
-  background: rgb(55, 57, 82);
+  font-weight: bold;
+  background: rgb(211, 131, 12);
   border-radius: 10px;
 }
