@@ -35,10 +35,10 @@ export default function Footer() {
         <a href="https://docs.gamba.so/" target="_blank" rel="noopener noreferrer">Docs</a>
       </SocialLinks>
       <div>
-        © {new Date().getFullYear()} Casino of Bonk. All rights reserved.
+        © {new Date().getFullYear()} Bonkbet. All rights reserved.
       </div>
       <div style={{ fontSize: "15px", marginTop: "4px" }}>
-        Version: {pkg.version}
+        build: {pkg.version}
       </div>
     </FooterWrapper>
   );
