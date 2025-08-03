@@ -4,21 +4,21 @@
 
 :root {
   --background-color: #ffa600;
-  --text-color: #ffffff;
+  --text-color: #000000;
   -webkit-text-stroke-width: 0.25px;
   --gamba-ui-primary-color: #ff9900;
 
   --gamba-ui-border-radius: 5px;
 
-  --gamba-ui-button-default-background: #ff9900;
+  --gamba-ui-button-default-background: #c57600;
   --gamba-ui-button-default-background-hover: #fdc97a;
   --gamba-ui-button-default-color: rgb(0, 0, 0);
 
-  --gamba-ui-button-main-background: #ff9900;
+  --gamba-ui-button-main-background: #c57600;
   --gamba-ui-button-main-color: rgb(0, 0, 0);
   --gamba-ui-button-main-background-hover: #fdc97a;
 
-  --gamba-ui-input-background: #ff9900;
+  --gamba-ui-input-background: #c57600;
   --gamba-ui-input-color: #000000;
   --gamba-ui-input-background-hover: #fdc97a;
 }
