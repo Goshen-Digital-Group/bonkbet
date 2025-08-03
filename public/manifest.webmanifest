@@ -1,13 +1,13 @@
 {
-	"name": "Casino of Bonk",
-	"short_name": "COB",
+	"name": "Bonkbet",
+	"short_name": "bb",
 	"start_url": "/",
 	"display": "standalone",
 	"background_color": "#000000",
 	"lang": "en",
 	"scope": "/",
 	"theme_color": "#FF5555",
-	"description": "",
+	"description": "A decentralized casino built on Solana, powered by BONK. Enjoy secure, transparent gaming with fast transactions and a fun, community-driven experience.",
 	"icons": [
 		{
 			"src": "/icon-512.png",
