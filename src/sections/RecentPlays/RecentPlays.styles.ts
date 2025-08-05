@@ -48,7 +48,7 @@ export const Profit = styled.div<{$win: boolean}>`
   display: flex;
   gap: .5em;
   align-items: center;
-  background: ${props => props.$win ? '#00ff4021' : '#ffffff11'};
+  background: ${props => props.$win ? '#00ff40d7' : '#ff000093'};
   border-radius: 10px;
   padding: 2px 5px;
 `
@@ -75,9 +75,9 @@ export const Recent = styled.button`
   text-decoration: none;
   justify-content: space-between;
   border-radius: 10px;
-  background: #0f121b;
+  background: #ffc400ff;
   &:hover {
-    background: #131724;
+    background: #ff9900ff;
   }
 `
 

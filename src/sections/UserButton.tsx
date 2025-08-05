@@ -102,7 +102,7 @@ export function UserButton() {
           >
             <div style={{ display: 'flex', gap: '.5em', alignItems: 'center' }}>
               <img src={wallet.wallet?.adapter.icon} height="20px" />
-              {truncateString(wallet.publicKey?.toBase58(), 3)}
+              {truncateString(wallet.publicKey?.toBase58(), 4)}
             </div>
           </GambaUi.Button>
         </div>

@@ -38,13 +38,13 @@ function RecentPlay({ event }: {event: GambaTransaction<'GameSettled'>}) {
 
   return (
     <>
-      <img src={game?.meta.image} style={{ height: '1.5em' }} />
-      <div style={{ color: 'var(--gamba-ui-primary-color)' }}>
-        {data.user.toBase58().substring(0, 4)}...
+      <img src={game?.meta.image} style={{ height: '2.5em' }} />
+      <div style={{ color: '#ff7b00ff' }}>
+        ...{data.user.toBase58().slice(-5)}
       </div>
-      {md && (profit >= 0 ? ' won ' : ' lost ')}
+      {md && (profit >= 0 ? ' WON ' : ' LOST ')}
       <Profit $win={profit > 0}>
-        <img src={token.image} height="20px" style={{ borderRadius: '50%' }} />
+        <img src={token.image} height="30px" style={{ borderRadius: '50%' }} />
         <TokenValue amount={Math.abs(profit)} mint={data.tokenMint} />
         {/* {(token.usdPrice * profit / (10 ** token.decimals)).toLocaleString()} USD */}
       </Profit>

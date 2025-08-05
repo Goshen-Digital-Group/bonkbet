@@ -29,7 +29,6 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 12px;
   z-index: 0;
 `;
 
@@ -77,23 +76,27 @@ type SlideType = {
   image: string;
   buttonText: string;
   buttonLink: string;
+  description: string;
 };
 
 const slides: SlideType[] = [
   {
-    image: "https://placehold.co/400x180/orange/white?text=Bonk+Casino+1",
-    buttonText: "Play Now",
-    buttonLink: "https://v2.gamba.so/",
+    image: "/banner/Bonkbet-carouselbanner-1080x300-2.png",
+    buttonText: "Buy Now",
+    buttonLink: "https://letsbonk.fun/",
+    description: "Get BONKBET TOKEN and start playing now!",
   },
   {
-    image: "https://placehold.co/400x180/pink/white?text=Bonk+Casino+2",
-    buttonText: "Join Community",
-    buttonLink: "https://discord.gg/HSTtFFwR",
+    image: "/banner/Bonkbet-carouselbanner-1080x300.png",
+    buttonText: "Join the Community",
+    buttonLink: "https://x.com/i/communities/1949296345229181382",
+    description: "Connect with other BONK enthusiasts.",
   },
   {
-    image: "https://placehold.co/400x180/blue/white?text=Bonk+Casino+3",
-    buttonText: "Read Docs",
-    buttonLink: "https://docs.gamba.so/",
+    image: "/banner/Bonkbet-carouselbanner-1080x3001.png",
+    buttonText: "Read the Docs",
+    buttonLink: "https://docs.bonkbet.live/",
+    description: "Learn more about Bonkbet features.",
   },
 ];
 
@@ -165,13 +168,44 @@ export function ImageCarousel({ delay = 3000 }: { delay?: number }) {
       {slides.map((slide, idx) => (
         <Slide key={idx} active={idx === current}>
           <Image src={slide.image} alt={`Slide ${idx + 1}`} />
-          <SlideButton
+            <SlideButton
             href={slide.buttonLink}
             target="_blank"
             rel="noopener noreferrer"
-          >
+            style={{
+              display: "inline-block",
+              marginTop: "12px",
+              bottom: "100px",
+              fontSize: "clamp(0.9rem, 2vw, 1.1rem)",
+              padding: "8px 16px",
+              minWidth: "120px",
+              maxWidth: "90vw",
+              whiteSpace: "nowrap",
+            }}
+            >
             {slide.buttonText}
-          </SlideButton>
+            </SlideButton>
+            <div
+            style={{
+              position: "absolute",
+              bottom: "50px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              color: "#222",
+              background: "rgba(255,255,255,0.85)",
+              padding: "clamp(6px, 2vw, 12px) clamp(12px, 4vw, 24px)",
+              borderRadius: "6px",
+              fontWeight: "bold",
+              zIndex: 1,
+              textAlign: "center",
+              maxWidth: "90vw",
+              fontSize: "clamp(0.85rem, 2vw, 1.05rem)",
+              lineHeight: 1.3,
+              boxSizing: "border-box",
+            }}
+            >
+            {slide.description}
+            </div>
         </Slide>
       ))}
       <Dots>
