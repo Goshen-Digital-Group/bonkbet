@@ -64,21 +64,21 @@ export function Navigation() {
     <MenuContainer>
       <Buttons>
         <button onClick={copyInvite}>💸 Invite Now</button>
-        <button onClick={() => window.open("https://x.com/casinoofbonk", "_blank")}>
+        <button onClick={() => window.open("https://x.com/bonkbet", "_blank")}>
           𝕏 X
         </button>
         <button
-          onClick={() => window.open("https://x.com/casinoofbonk", "_blank")}
+          onClick={() => window.open("https://x.com/i/communities/1949296345229181382", "_blank")}
         >
           𝕏 Community
         </button>
         <button
-          onClick={() => window.open("https://docs.casinoofbonk.fun", "_blank")}
+          onClick={() => window.open("https://docs.bonkbet.live", "_blank")}
         >
           📖 Docs
         </button>
         <button
-          onClick={() => window.open("https://letsbonk.fun", "_blank")}
+          onClick={() => window.open("https://letsbonk.fun/", "_blank")}
         >
           💰 Buy Now
         </button>

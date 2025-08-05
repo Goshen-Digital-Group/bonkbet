@@ -49,6 +49,8 @@ function ErrorHandler() {
   )
 }
 
+console.log('RPC Endpoint:', import.meta.env.VITE_RPC_ENDPOINT);
+
 export default function App() {
   const newcomer = useUserStore((state) => state.newcomer)
   const set = useUserStore((state) => state.set)

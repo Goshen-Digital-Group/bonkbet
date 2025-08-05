@@ -18,7 +18,7 @@ export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
 export const EXPLORER_URL = "https://explorer.gamba.so";
 
 // Platform URL - Appears in ShareModal
-export const PLATFORM_SHARABLE_URL = "play.casinoofbonk.fun";
+export const PLATFORM_SHARABLE_URL = "play.bonkbet.live";
 
 // Creator fee (in %)
 export const PLATFORM_CREATOR_FEE = 0.0125; // 1.25% !!max 5%!!

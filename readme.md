@@ -1,1 +1,1 @@
-# Casino of Bonk (WIP)
+# Bonkbet (WIP)

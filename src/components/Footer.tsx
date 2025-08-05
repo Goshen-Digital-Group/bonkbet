@@ -21,7 +21,7 @@ const SocialLinks = styled.div`
     font-size: 20px;
     transition: color 0.2s;
     &:hover {
-      color: #ff6600; // orange on hover
+      color: #ffffffff; // orange on hover
     }
   }
 `
@@ -31,14 +31,25 @@ export default function Footer() {
     <FooterWrapper>
       <SocialLinks>
         <a href="https://x.com/bonkcasino" target="_blank" rel="noopener noreferrer">X</a>
-        <a href="https://discord.gg/HSTtFFwR" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a href="https://discord.gg/QvYYUcwX" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a href="https://github.com/Goshen-Digital-Group/bonkbet" target="_blank" rel="noopener noreferrer">Github</a>
         <a href="https://docs.gamba.so/" target="_blank" rel="noopener noreferrer">Docs</a>
+
       </SocialLinks>
       <div>
         © {new Date().getFullYear()} Bonkbet. All rights reserved.
       </div>
       <div style={{ fontSize: "15px", marginTop: "4px" }}>
-        build: {pkg.version}
+        build: <a
+          href="https://github.com/Goshen-Digital-Group/bonkbet"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#000", textDecoration: "none" }}
+          onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
+          onMouseLeave={e => (e.currentTarget.style.color = "#000")}
+        >
+          {pkg.version}
+        </a>
       </div>
     </FooterWrapper>
   );
