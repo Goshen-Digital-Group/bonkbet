@@ -17,7 +17,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   position: relative;
-  background: #ff556a;
+  background: #ff001eff;
   border-radius: 10px;
   box-shadow: 0 0 0px 5px #32294355;
   transition: box-shadow .2s ease;
@@ -80,7 +80,7 @@ const Label = styled.div<{$active: boolean}>`
   padding: 5px;
   border-radius: 10px;
   min-width: 30px;
-  color: #ff949f;
+  color: #ff0019ff;
   transition: left .2s ease;
   font-size: 75%;
 

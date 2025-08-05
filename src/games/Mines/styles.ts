@@ -76,8 +76,8 @@ export const Grid = styled.div`
 
 export const Levels = styled.div`
   border-radius: 5px;
-  color: gray;
-  background: #292a307d;
+  color: #ffffffc2;
+  background: #0000009f;
   overflow: hidden;
   width: 100%;
   display: flex;
@@ -100,8 +100,8 @@ export const Level = styled.div<{$active: boolean}>`
   }
 
   ${(props) => props.$active && css`
-    background: #FFFFFF11;
-    background: 2px 0px 10px #00000033;
+    background: #000000ff;
+    background: 2px 0px 10px #000000ff;
     color: #32cd5e;
     opacity: 1;
   `}
@@ -115,7 +115,7 @@ export const CellButton = styled.button<{status: CellStatus, selected: boolean}>
   background: #8f4000ff;
   background-size: 100%;
   border: none;
-  border-bottom: 5px solid #00000055;
+  border-bottom: 5px solid #000000ff;
   border-radius: 4px;
   font-weight: bold;
   aspect-ratio: 1;
