@@ -30,17 +30,27 @@ export default function Footer() {
   return (
     <FooterWrapper>
       <SocialLinks>
-        <a href="https://x.com/bonkcasino" target="_blank" rel="noopener noreferrer">X</a>
-        <a href="https://discord.gg/QvYYUcwX" target="_blank" rel="noopener noreferrer">Discord</a>
-        <a href="https://github.com/Goshen-Digital-Group/bonkbet" target="_blank" rel="noopener noreferrer">Github</a>
-        <a href="https://docs.gamba.so/" target="_blank" rel="noopener noreferrer">Docs</a>
-
+        <a href="https://bonkbet.live" target="_blank" rel="noopener noreferrer">
+          🏠
+        </a>
+        <a href="https://x.com/bonkcasino" target="_blank" rel="noopener noreferrer">
+          𝕏
+        </a>
+        <a href="https://discord.gg/QvYYUcwX" target="_blank" rel="noopener noreferrer">
+          💬
+        </a>
+        <a href="https://github.com/Goshen-Digital-Group/bonkbet" target="_blank" rel="noopener noreferrer">
+          📂
+        </a>
+        <a href="https://docs.bonkbet.live" target="_blank" rel="noopener noreferrer">
+          📚
+        </a>
       </SocialLinks>
       <div>
         © {new Date().getFullYear()} Bonkbet. All rights reserved.
       </div>
       <div style={{ fontSize: "15px", marginTop: "4px" }}>
-        build: <a
+        Version: <a
           href="https://github.com/Goshen-Digital-Group/bonkbet"
           target="_blank"
           rel="noopener noreferrer"
