@@ -60,7 +60,7 @@ const SlideButton = styled.a`
   transform: translateX(-50%);
   z-index: 2;
   padding: 8px 16px;
-  background: #ff9900;
+  background: url('/background/BG-casino.svg') center/cover no-repeat; // <-- changed line
   color: #fff;
   border-radius: 6px;
   text-decoration: none;
