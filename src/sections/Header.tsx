@@ -108,7 +108,7 @@ const MobileMenuDropdown = styled.div`
     transition: color 0.2s;
 
     &:hover {
-      color: #ff9800;
+      color: #ffee00ff;
     }
   }
 `;
@@ -210,7 +210,7 @@ export default function Header() {
                     cursor: "pointer",
                   }}
                   onMouseEnter={(e) =>
-                    (e.currentTarget.style.color = "#ff9800")
+                    (e.currentTarget.style.color = "#f1ad47ff")
                   }
                   onMouseLeave={(e) =>
                     (e.currentTarget.style.color = "#000000ff")
