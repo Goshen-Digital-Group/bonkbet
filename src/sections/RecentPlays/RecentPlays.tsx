@@ -70,7 +70,17 @@ function RecentPlay({ event }: {event: GambaTransaction<'GameSettled'>}) {
 export default function RecentPlays() {
   const events = useRecentPlays({ showAllPlatforms: false })
   const [selectedGame, setSelectedGame] = React.useState<GambaTransaction<'GameSettled'>>()
+  const [, setRefresh] = React.useState(0) // Force re-render trigger
   const md = useMediaQuery('md')
+
+  // Auto-reload every second
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setRefresh(prev => prev + 1) // Trigger re-render to fetch new data
+    }, 1000) // 1000ms = 1 second
+
+    return () => clearInterval(interval) // Cleanup on unmount
+  }, [])
 
   return (
     <Container>

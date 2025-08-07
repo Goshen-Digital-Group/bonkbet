@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import pkg from "../../package.json";
+import { SocialIcon } from 'react-social-icons';
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -30,21 +31,9 @@ export default function Footer() {
   return (
     <FooterWrapper>
       <SocialLinks>
-        <a href="https://bonkbet.live" target="_blank" rel="noopener noreferrer">
-          🏠
-        </a>
-        <a href="https://x.com/bonkcasino" target="_blank" rel="noopener noreferrer">
-          𝕏
-        </a>
-        <a href="https://discord.gg/QvYYUcwX" target="_blank" rel="noopener noreferrer">
-          💬
-        </a>
-        <a href="https://github.com/Goshen-Digital-Group/bonkbet" target="_blank" rel="noopener noreferrer">
-          📂
-        </a>
-        <a href="https://docs.bonkbet.live" target="_blank" rel="noopener noreferrer">
-          📚
-        </a>
+        <SocialIcon url="https://twitter.com/i/communities/1949296345229181382" network="twitter" bgColor="#000" fgColor="#fff" style={{ height: 32, width: 32, margin: "0 10px" }} label="Twitter Community" />
+        <SocialIcon url="https://discord.gg/QvYYUcwX" network="discord" bgColor="#000" fgColor="#fff" style={{ height: 32, width: 32, margin: "0 10px" }} label="Discord" />
+        <SocialIcon url="https://github.com/Goshen-Digital-Group/bonkbet" network="github" bgColor="#000" fgColor="#fff" style={{ height: 32, width: 32, margin: "0 10px" }} label="GitHub" />
       </SocialLinks>
       <div>
         © {new Date().getFullYear()} Bonkbet. All rights reserved.
