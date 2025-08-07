@@ -43,12 +43,12 @@ const Dots = styled.div`
 `;
 
 const Dot = styled.button<{ active: boolean }>`
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   border-radius: 100%;
   margin: 0 6px;
-  border: none;
-  background: ${(props) => (props.active ? "#ff9900" : "#ddd")};
+  border: 2px solid #000000ff; // Add black outline
+  background: ${(props) => (props.active ? "#df7f12ff" : "#ffffffff")};
   cursor: pointer;
   transition: background 0.3s;
 `;
@@ -60,7 +60,7 @@ const SlideButton = styled.a`
   transform: translateX(-50%);
   z-index: 2;
   padding: 8px 16px;
-  background: #ff9900 center/cover no-repeat; // <-- changed line
+  background: #ff9900 center/cover no-repeat; 
   color: #fff;
   border-radius: 6px;
   text-decoration: none;
@@ -110,8 +110,8 @@ const ArrowButton = styled.button<{ left?: boolean; right?: boolean }>`
   color: #ff9900;
   border: none;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 100px;
+  height: 100px;
   font-size: 22px;
   display: flex;
   align-items: center;
@@ -130,11 +130,17 @@ export function ImageCarousel({ delay = 3000 }: { delay?: number }) {
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    timeoutRef.current && clearTimeout(timeoutRef.current);
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
     timeoutRef.current = setTimeout(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
     }, delay);
-    return () => timeoutRef.current && clearTimeout(timeoutRef.current);
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
   }, [current, delay]);
 
   const goToPrev = () =>

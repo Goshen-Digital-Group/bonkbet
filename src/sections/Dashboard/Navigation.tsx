@@ -64,7 +64,7 @@ export function Navigation() {
     <MenuContainer>
       <Buttons>
         <button onClick={copyInvite}>💸 Invite Now</button>
-        <button onClick={() => window.open("https://x.com/bonkbet", "_blank")}>
+        <button onClick={() => window.open("https://x.com/BonkBetSolana", "_blank")}>
           𝕏 X
         </button>
         <button
