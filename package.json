@@ -1,8 +1,8 @@
 {
   "name": "bonkbet-play",
   "private": true,
-  "version": "1.1.1",
-  "description": "",
+  "version": "1.1.2",
+  "description": "A Solana-based on-chain casino providing a secure, transparent, community-driven, and provably fair gaming experience powered by #BONK.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
