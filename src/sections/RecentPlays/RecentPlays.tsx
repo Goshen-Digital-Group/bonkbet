@@ -75,6 +75,7 @@ export default function RecentPlays() {
 
   // Auto-reload every second
   React.useEffect(() => {
+    setRefresh(prev => prev + 1) // Trigger initial fetch immediately on mount
     const interval = setInterval(() => {
       setRefresh(prev => prev + 1) // Trigger re-render to fetch new data
     }, 1000) // 1000ms = 1 second
