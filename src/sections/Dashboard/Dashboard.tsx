@@ -5,6 +5,7 @@ import { GAMES } from '../../games'
 import { GameCard } from './GameCard'
 import { Navigation } from './Navigation'
 import { ImageCarousel } from './ImageCarousel'
+import { ContractAddress } from '../../components/ContractAddress'
 
 export function GameSlider() {
   return (
@@ -48,6 +49,7 @@ export default function Dashboard() {
     <>
       <ImageCarousel />
       <Navigation />
+      <ContractAddress address="xXXXXXXXXXXXXXXXXXXXXXXXXXXx" />
       <h2 style={{ textAlign: 'center' }}>Games</h2>
       <GameGrid />
     </>
