@@ -49,7 +49,7 @@ export default function Dashboard() {
     <>
       <ImageCarousel />
       <Navigation />
-      <ContractAddress address="xXXXXXXXXXXXXXXXXXXXXXXXXXXx" />
+      <ContractAddress address="BvWpUxB3y8c4c1DzfkgRthRRQhp3B5X5ixzKpwepbonk" />
       <h2 style={{ textAlign: 'center' }}>Games</h2>
       <GameGrid />
     </>
